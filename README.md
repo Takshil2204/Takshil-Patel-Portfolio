@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Takshil Patel — Professional Developer Portfolio
 
 A modern, futuristic, dark-themed personal portfolio website built with **vanilla HTML5, CSS3, and JavaScript**. Tailored specifically for **Takshil Patel** to showcase software engineering, cybersecurity, computer networking, and algorithmic problem-solving abilities when applying for coding challenges, internships, and technology opportunities.
@@ -168,3 +169,6 @@ git push -u origin main
 
 ## 📄 License & Credits
 Designed and engineered for **Takshil Patel**. Released under the MIT License.
+=======
+# Takshil-Patel-Portfolio
+>>>>>>> d8d44b7b7462daecd5f10c19a915b161df53fb2c
