@@ -109,7 +109,7 @@ In `index.html` (under `#projects`), update:
 In `#contact`:
 - Email: Update `takshil.patel@example.com` with your real email address.
 - GitHub: Connected to `https://github.com/Takshil2204` (Repository: `https://github.com/Takshil2204/Takshil-Patel-Portfolio`).
-- LinkedIn: Update `https://linkedin.com/in/takshil-patel` with your LinkedIn vanity URL.
+- LinkedIn: Connected to `https://www.linkedin.com/in/takshil-patel-b93706250`.
 - Unstop Profile: Pre-configured to `https://unstop.com/@Takshpat15544`.
 
 ---
