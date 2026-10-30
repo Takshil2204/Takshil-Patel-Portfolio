@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>Featured Projects | Takshil Patel — Developer &amp; Cybersecurity Specialist</title>
+  <meta name="title" content="Featured Projects | Takshil Patel — Developer &amp; Cybersecurity Specialist">
+  <meta name="description" content="Explore Takshil Patel's featured engineering projects: Secure Document Vault, Network Packet Analyzer, Port Sentinel, Pathfinding Visualizer, and more.">
+  <meta name="author" content="Takshil Patel">
+  <meta name="theme-color" content="#07090e">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://takshilpatel.dev/projects.html">
+  <meta property="og:title" content="Featured Projects | Takshil Patel">
+  <meta property="og:description" content="Technical project portfolio featuring client-side cryptography, raw socket sniffers, graph pathfinding, and security audit tools.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%2307090e'/><rect x='4' y='4' width='92' height='92' rx='18' fill='none' stroke='%2300f0ff' stroke-width='4' opacity='0.7'/><text x='50' y='64' font-family='monospace' font-size='42' font-weight='900' fill='%2300f0ff' text-anchor='middle'>TP</text></svg>">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Ambient Light Orbs -->
+  <div class="bg-ambient-layer" aria-hidden="true">
+    <div class="ambient-orb ambient-orb-1"></div>
+    <div class="ambient-orb ambient-orb-2"></div>
+    <div class="ambient-orb ambient-orb-3"></div>
+  </div>
+
+  <!-- Interactive Subtle Cyber Canvas -->
+  <canvas id="cyber-canvas" class="cyber-canvas" aria-hidden="true"></canvas>
+
+  <!-- ========================================================================
+       Header & Navigation
+       ======================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Takshil Patel Portfolio Homepage">
+        <span class="logo-bracket">&lt;</span><span class="logo-text">TP</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary site navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="projects.html" class="nav-link active" aria-current="page">Projects</a></li>
+          <li><a href="achievements.html" class="nav-link">Achievements</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="contact.html" class="btn btn-outline-nav">Contact Me</a>
+        </div>
+      </nav>
+
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Main Content
+       ======================================================================== -->
+  <main id="main-content">
+
+    <!-- Page Banner / Breadcrumbs -->
+    <section class="page-banner">
+      <div class="container">
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+          <ol class="breadcrumb-list">
+            <li><a href="index.html" class="breadcrumb-link">Home</a></li>
+            <li class="breadcrumb-separator" aria-hidden="true">/</li>
+            <li class="breadcrumb-current" aria-current="page">Projects</li>
+          </ol>
+        </nav>
+
+        <span class="section-tag">// 03. PORTFOLIO &amp; ARCHITECTURE</span>
+        <h1 class="section-title">Featured Projects</h1>
+        <p class="section-subtitle">
+          Hands-on technical solutions showcasing software engineering, network protocol dissection, and cybersecurity tools.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Gallery Section -->
+    <section class="section" style="padding-top: 3.5rem;">
+      <div class="container">
+
+        <!-- Transparency Notice -->
+        <div class="project-placeholder-notice">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          <div>
+            <strong>Authentic Project Template Notice:</strong> The projects below are engineered as comprehensive technical blueprints ready to be linked directly to your GitHub repositories as you publish them.
+          </div>
+        </div>
+
+        <!-- Category Filter Buttons -->
+        <div class="projects-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects (7)</button>
+          <button class="filter-btn" data-filter="web">Web &amp; Systems (3)</button>
+          <button class="filter-btn" data-filter="security">Cybersecurity &amp; Tools (2)</button>
+          <button class="filter-btn" data-filter="problem-solving">Problem Solving (2)</button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid">
+          
+          <!-- Featured Project: Interactive 3D Portfolio Repository -->
+          <article class="project-card" data-category="web">
+            <div class="project-preview">
+              <div class="project-preview-visual">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                <span class="text-mono" style="margin-top: 8px; font-size: 0.8rem; color: #38bdf8;">Interactive 3D Engine</span>
+              </div>
+              <span class="project-badge-tag" style="background: rgba(0, 240, 255, 0.15); color: var(--accent-cyan); border-color: rgba(0, 240, 255, 0.3);">Featured Repository</span>
+            </div>
+            <div class="project-content">
+              <h2 class="project-title" style="font-size: 1.25rem;">Takshil Patel — Interactive 3D Portfolio</h2>
+              <div class="project-problem-box">
+                <strong>The Problem:</strong>
+                Modern portfolios depend on bloated framework runtimes exceeding 3MB, creating sluggish initial load speeds and battery drain on mobile devices.
+              </div>
+              <p class="project-description">
+                A multi-page, dark futuristic portfolio engineered with 100% pure vanilla web standards, real-time 3D vector canvas physics, and zero external dependencies.
+              </p>
+              <ul class="project-features-list">
+                <li>Real-time 3D Cyber Core hologram canvas with mouse spring physics</li>
+                <li>Dynamic 3D card perspective tilt with specular glare lighting</li>
+                <li>Accessible character cascades, typewriter engine, and blur-to-focus reveals</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span class="tech-pill">JavaScript ES6+</span>
+                <span class="tech-pill">HTML5 Canvas</span>
+                <span class="tech-pill">CSS3 3D Transforms</span>
+                <span class="tech-pill">Web Performance</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm open-modal-trigger" data-project="portfolio-core">Inspect Architecture</button>
+                <a href="https://github.com/Takshil2204/Takshil-Patel-Portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Takshil-Patel-Portfolio repository on GitHub">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 1: Secure Document Vault -->
+          <article class="project-card" data-category="web">
+            <div class="project-preview">
+              <div class="project-preview-visual">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <span class="text-mono" style="margin-top: 8px; font-size: 0.8rem; color: #94a3b8;">Client-Side Cryptographic Vault</span>
+              </div>
+              <span class="project-badge-tag">Web &amp; Security</span>
+            </div>
+            <div class="project-content">
+              <h2 class="project-title" style="font-size: 1.25rem;">Secure Document Vault &amp; Portal</h2>
+              <div class="project-problem-box">
+                <strong>The Problem:</strong>
+                Standard cloud storage leaves encryption keys on third-party servers, exposing sensitive files to data breaches and provider snooping.
+              </div>
+              <p class="project-description">
+                A browser-based zero-knowledge encryption vault that performs all key derivation and AES-256 file encryption locally on the client before persistence.
+              </p>
+              <ul class="project-features-list">
+                <li>Web Crypto API integration for zero-knowledge AES-GCM</li>
+                <li>Argon2 / PBKDF2 password hashing &amp; key stretching</li>
+                <li>Zero telemetry design with responsive dark interface</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span class="tech-pill">JavaScript ES6</span>
+                <span class="tech-pill">Web Crypto API</span>
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3 Grid</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm open-modal-trigger" data-project="doc-vault">Inspect Architecture</button>
+                <a href="https://github.com/Takshil2204/secure-document-vault" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Secure Document Vault source code on GitHub">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Network Packet Analyzer -->
+          <article class="project-card" data-category="security">
+            <div class="project-preview">
+              <div class="project-preview-visual">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                <span class="text-mono" style="margin-top: 8px; font-size: 0.8rem; color: #94a3b8;">Raw Socket Sniffer</span>
+              </div>
+              <span class="project-badge-tag">Networking</span>
+            </div>
+            <div class="project-content">
+              <h2 class="project-title" style="font-size: 1.25rem;">Network Packet Analyzer &amp; Visualizer</h2>
+              <div class="project-problem-box">
+                <strong>The Problem:</strong>
+                Grasping low-level packet structure and detecting malicious traffic anomalies requires granular visibility into raw Ethernet and IP headers.
+              </div>
+              <p class="project-description">
+                A custom socket packet capture tool that decodes raw Ethernet frames, unpacks TCP/UDP headers, and flags abnormal traffic spikes.
+              </p>
+              <ul class="project-features-list">
+                <li>Raw socket capture &amp; header byte dissection</li>
+                <li>Protocol distribution breakdown (HTTP, DNS, ICMP)</li>
+                <li>Basic SYN flood signature detection heuristics</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Raw Sockets</span>
+                <span class="tech-pill">TCP/IP</span>
+                <span class="tech-pill">Wireshark Spec</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm open-modal-trigger" data-project="packet-analyzer">Inspect Architecture</button>
+                <a href="https://github.com/Takshil2204/network-packet-analyzer" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Network Packet Analyzer source code on GitHub">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Port Sentinel Security Audit -->
+          <article class="project-card" data-category="security">
+            <div class="project-preview">
+              <div class="project-preview-visual">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line></svg>
+                <span class="text-mono" style="margin-top: 8px; font-size: 0.8rem; color: #94a3b8;">Concurrent Port Scanner</span>
+              </div>
+              <span class="project-badge-tag">Cybersecurity</span>
+            </div>
+            <div class="project-content">
+              <h2 class="project-title" style="font-size: 1.25rem;">Port Sentinel — Security Audit Tool</h2>
+              <div class="project-problem-box">
+                <strong>The Problem:</strong>
+                Developers frequently leave exposed internal ports and debug services open, inadvertently creating easy entry points for attackers.
+              </div>
+              <p class="project-description">
+                A high-speed multi-threaded TCP audit CLI that surveys port ranges, grabs banner version strings, and reports configuration risks.
+              </p>
+              <ul class="project-features-list">
+                <li>Concurrent asynchronous scanning engine</li>
+                <li>Service identification and banner version extraction</li>
+                <li>Formatted terminal reports with risk recommendations</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Threading</span>
+                <span class="tech-pill">Network Sockets</span>
+                <span class="tech-pill">CLI Automation</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm open-modal-trigger" data-project="port-sentinel">Inspect Architecture</button>
+                <a href="https://github.com/Takshil2204/port-sentinel" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Port Sentinel source code on GitHub">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Algorithmic Pathfinding Visualizer -->
+          <article class="project-card" data-category="problem-solving">
+            <div class="project-preview">
+              <div class="project-preview-visual">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h18v18H3z"></path><path d="M8 8h8v8H8z"></path></svg>
+                <span class="text-mono" style="margin-top: 8px; font-size: 0.8rem; color: #94a3b8;">Graph Algorithm Visualizer</span>
+              </div>
+              <span class="project-badge-tag">Algorithms</span>
+            </div>
+            <div class="project-content">
+              <h2 class="project-title" style="font-size: 1.25rem;">Algorithmic Pathfinding Visualizer</h2>
+              <div class="project-problem-box">
+                <strong>The Problem:</strong>
+                Understanding the trade-offs of graph exploration strategies like Dijkstra vs. A* heuristic search is difficult without interactive visualization.
+              </div>
+              <p class="project-description">
+                An interactive grid application allowing users to place obstacles, set heuristics, and observe pathfinding algorithms compute in real-time.
+              </p>
+              <ul class="project-features-list">
+                <li>Implementation of Dijkstra, A*, BFS, and DFS</li>
+                <li>Interactive wall drawing, maze generation, and weights</li>
+                <li>Live computational statistics (nodes evaluated, time in ms)</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span class="tech-pill">JavaScript ES6</span>
+                <span class="tech-pill">HTML5 Canvas</span>
+                <span class="tech-pill">Graph Theory</span>
+                <span class="tech-pill">CSS Animations</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm open-modal-trigger" data-project="algo-visualizer">Inspect Architecture</button>
+                <a href="https://github.com/Takshil2204/algorithmic-pathfinding-visualizer" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Pathfinding Visualizer source code on GitHub">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: API Rate-Limiter Proxy -->
+          <article class="project-card" data-category="web">
+            <div class="project-preview">
+              <div class="project-preview-visual">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                <span class="text-mono" style="margin-top: 8px; font-size: 0.8rem; color: #94a3b8;">Traffic Throttling Middleware</span>
+              </div>
+              <span class="project-badge-tag">Tools &amp; Web</span>
+            </div>
+            <div class="project-content">
+              <h2 class="project-title" style="font-size: 1.25rem;">API Rate-Limiting &amp; Proxy Middleware</h2>
+              <div class="project-problem-box">
+                <strong>The Problem:</strong>
+                Web backends suffer from Denial-of-Service and runaway client requests unless protected by resilient token-bucket rate limiting.
+              </div>
+              <p class="project-description">
+                A lightweight reverse proxy middleware that monitors IP request frequencies and enforces sliding-window rate caps to shield backend resources.
+              </p>
+              <ul class="project-features-list">
+                <li>Token Bucket &amp; Sliding Window Log algorithms</li>
+                <li>Standard HTTP rate limit headers response generator</li>
+                <li>Configurable burst thresholds with memory-safe cleanup</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">HTTP Protocols</span>
+                <span class="tech-pill">Data Structures</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm open-modal-trigger" data-project="rate-limiter">Inspect Architecture</button>
+                <a href="https://github.com/Takshil2204/api-rate-limiter-proxy" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Rate Limiter source code on GitHub">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Cryptographic Cipher Lab -->
+          <article class="project-card" data-category="problem-solving">
+            <div class="project-preview">
+              <div class="project-preview-visual">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 9.9-1"></path></svg>
+                <span class="text-mono" style="margin-top: 8px; font-size: 0.8rem; color: #94a3b8;">Cipher &amp; Entropy Analyzer</span>
+              </div>
+              <span class="project-badge-tag">Cybersecurity &amp; Math</span>
+            </div>
+            <div class="project-content">
+              <h2 class="project-title" style="font-size: 1.25rem;">Cryptographic Cipher Lab</h2>
+              <div class="project-problem-box">
+                <strong>The Problem:</strong>
+                Hands-on intuition for how mathematical transformations resist frequency analysis attacks is essential for understanding modern cryptosystems.
+              </div>
+              <p class="project-description">
+                An educational cryptographic suite illustrating classical substitution/transposition ciphers alongside modern Feistel network concepts.
+              </p>
+              <ul class="project-features-list">
+                <li>Visual matrix manipulation and state visualization</li>
+                <li>Real-time letter frequency histogram analyzer</li>
+                <li>Shannon entropy estimation for ciphertext diffusion</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">Information Theory</span>
+                <span class="tech-pill">HTML5 Canvas</span>
+                <span class="tech-pill">CSS3</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm open-modal-trigger" data-project="cipher-lab">Inspect Architecture</button>
+                <a href="https://github.com/Takshil2204/crypto-cipher-lab" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Cipher Lab source code on GitHub">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Page CTA Banner -->
+        <div class="page-cta-banner">
+          <div class="cta-banner-content">
+            <h3>Have an engineering opportunity or challenge?</h3>
+            <p>
+              I am open to internships, technical coding challenges, and collaborative software projects.
+            </p>
+          </div>
+          <div class="cta-banner-actions">
+            <a href="contact.html" class="btn btn-primary">
+              <span>Contact Takshil</span>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="achievements.html" class="btn btn-secondary">
+              <span>View Achievements</span>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       Interactive Modal: Project Deep Dive
+       ======================================================================== -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Project Technical Breakdown</h3>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal dialog">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Injected via js/projects-filter.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="index.html" class="brand-logo" aria-label="Takshil Patel Portfolio Homepage">
+          <span class="logo-bracket">&lt;</span><span class="logo-text">TP</span><span class="logo-bracket">/&gt;</span>
+        </a>
+
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="achievements.html">Achievements</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="footer-socials">
+          <a href="https://github.com/Takshil2204" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Takshil Patel on GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="https://linkedin.com/in/takshil-patel" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Takshil Patel on LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="https://unstop.com/@Takshpat15544" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Takshil Patel on Unstop">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="current-year">2026</span> Takshil Patel. Engineered with semantic HTML5, modern CSS3, and vanilla JavaScript.</p>
+        <button class="back-to-top-btn" id="back-to-top" aria-label="Scroll back to top of the page">
+          <span>Back to Top</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/canvas-bg.js"></script>
+  <script src="js/projects-filter.js"></script>
+  <script src="js/animations-3d.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
