@@ -184,7 +184,8 @@
   // Initialize
   function init() {
     particles.length = 0;
-    for (let i = 0; i < particleCount; i++) {
+    const dynamicCount = width < 480 ? 28 : (width < 768 ? 40 : (width < 1200 ? 56 : 72));
+    for (let i = 0; i < dynamicCount; i++) {
       particles.push(new Particle3D());
     }
   }
@@ -270,6 +271,22 @@
   }, { passive: true });
 
   window.addEventListener('mouseleave', () => {
+    mouse.active = false;
+    targetCamX = 0;
+    targetCamY = 0;
+  }, { passive: true });
+
+  window.addEventListener('touchmove', (e) => {
+    if (e.touches && e.touches[0]) {
+      mouse.x = e.touches[0].clientX;
+      mouse.y = e.touches[0].clientY;
+      mouse.active = true;
+      targetCamX = (e.touches[0].clientX - width / 2) * 0.08;
+      targetCamY = (e.touches[0].clientY - height / 2) * 0.08;
+    }
+  }, { passive: true });
+
+  window.addEventListener('touchend', () => {
     mouse.active = false;
     targetCamX = 0;
     targetCamY = 0;

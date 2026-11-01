@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Takshil Patel — Professional Developer Portfolio
 
 A modern, futuristic, dark-themed personal portfolio website built with **vanilla HTML5, CSS3, and JavaScript**. Tailored specifically for **Takshil Patel** to showcase software engineering, cybersecurity, computer networking, and algorithmic problem-solving abilities when applying for coding challenges, internships, and technology opportunities.
@@ -17,6 +16,11 @@ A modern, futuristic, dark-themed personal portfolio website built with **vanill
   - **Accessible Character-by-Character Section Headings**: Dynamic letter cascade preserving responsive word wrapping and screen-reader accessibility (`aria-label` / `aria-hidden`).
   - **Hero Subtitle Typewriter**: Cycles through core engineering domains (*Software Developer*, *Cybersecurity Explorer*, *Network Systems Enthusiast*, *Algorithmic Problem Solver*) with tab visibility pausing.
   - **Magnetic CTA Interactions**: Subtle directional cursor tracking on primary buttons and glowing letter-spacing transitions on navigation links.
+- **100% Responsive 7-Tier Architecture**:
+  - Precision-engineered breakpoints: Small Mobile (320px–374px), Mobile (375px–480px), Large Mobile (481px–767px), Tablet (768px–1024px), Laptop (1025px–1440px), Desktop (1441px–1920px), and UltraWide / 4K (1920px+).
+  - Modern slide-out navigation drawer with dynamic viewport height (`100dvh`), backdrop filter blur, 44px minimum tap targets, and outside-click/escape auto-close.
+  - Zero horizontal overflow (`overflow-x: hidden`, defensive grid auto-fit formulas, code block scroll containment, and iOS Safari 16px auto-zoom prevention).
+  - Adaptive 3D animations with touch interaction support (`touchmove`/`touchstart`), dynamic particle density scaling, and hardware-accelerated CSS transforms.
 - **Zero-Dependency Architecture**: No React, Next.js, or bulky external runtime libraries. Pure, high-performance vanilla web standards.
 - **Authenticity First**: Clear demarcation between verified skills and active learning goals; structured project templates with honest problem-solving narratives rather than fabricated statistics.
 - **Unstop Opportunity Tracking**: Dedicated spotlight module highlighting the Unstop Online Coding Challenge reference (`TbMH0R9`) and participant handle (`Takshpat15544`).
@@ -41,7 +45,7 @@ takshil-patel-portfolio/
 ├── css/
 │   ├── style.css           # Design tokens, CSS variables, typography, and reset
 │   ├── components.css      # Header, Hero, Terminal, Cards, Modal, Toast, and Multi-page layouts
-│   └── responsive.css      # Fluid layouts for Desktop, Tablet (1024px/768px), and Mobile (480px)
+│   └── responsive.css      # Modular 7-tier responsive system (320px up to 1920px+ UltraWide)
 │
 ├── js/
 │   ├── main.js             # Navigation detection, sticky header, drawer toggle, back-to-top
@@ -169,6 +173,3 @@ git push -u origin main
 
 ## 📄 License & Credits
 Designed and engineered for **Takshil Patel**. Released under the MIT License.
-=======
-# Takshil-Patel-Portfolio
->>>>>>> d8d44b7b7462daecd5f10c19a915b161df53fb2c

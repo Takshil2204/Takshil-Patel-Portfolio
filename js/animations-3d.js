@@ -36,8 +36,9 @@
 
     function resize() {
       const rect = canvas.getBoundingClientRect();
-      width = rect.width || 340;
-      height = rect.height || 200;
+      const parentW = canvas.parentElement ? canvas.parentElement.clientWidth : 340;
+      width = rect.width || parentW || Math.min(window.innerWidth - 32, 340);
+      height = rect.height || (window.innerWidth < 480 ? 165 : 200);
       canvas.width = Math.round(width * dpr);
       canvas.height = Math.round(height * dpr);
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
@@ -151,6 +152,22 @@
       targetPulseScale = 1.25;
       setTimeout(() => { targetPulseScale = 1; }, 200);
     });
+
+    canvas.addEventListener('touchmove', (e) => {
+      if (e.touches && e.touches[0]) {
+        const touch = e.touches[0];
+        const rect = canvas.getBoundingClientRect();
+        const cx = rect.left + rect.width / 2;
+        const cy = rect.top + rect.height / 2;
+        targetRotY = ((touch.clientX - cx) / (rect.width / 2)) * 1.15;
+        targetRotX = -((touch.clientY - cy) / (rect.height / 2)) * 0.85;
+      }
+    }, { passive: true });
+
+    canvas.addEventListener('touchstart', () => {
+      targetPulseScale = 1.25;
+      setTimeout(() => { targetPulseScale = 1; }, 200);
+    }, { passive: true });
 
     // 3D Projection Math
     const fov = 280;

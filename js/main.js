@@ -60,9 +60,14 @@ document.addEventListener('DOMContentLoaded', () => {
   if (navToggle && siteNav) {
     navToggle.addEventListener('click', toggleMobileNav);
 
-    // Close mobile nav when clicking any nav link
+    // Close mobile nav when clicking any nav link or CTA in drawer
     navLinks.forEach((link) => {
       link.addEventListener('click', closeMobileNav);
+    });
+
+    const navActions = siteNav.querySelectorAll('.nav-actions a');
+    navActions.forEach((btn) => {
+      btn.addEventListener('click', closeMobileNav);
     });
 
     // Close when clicking outside
@@ -83,6 +88,13 @@ document.addEventListener('DOMContentLoaded', () => {
         navToggle.focus();
       }
     });
+
+    // Auto-close on viewport resize to desktop
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 991 && siteNav.classList.contains('open')) {
+        closeMobileNav();
+      }
+    }, { passive: true });
   }
 
   // 4. Multi-Page Active Nav Detection & Scroll Spy
